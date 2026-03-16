@@ -1,5 +1,5 @@
 /**
- * sr5-dsn-fix.js
+ * sr5-dsn-die.js
  *
  * Fixes the Shadowrun 5e system integration with Dice So Nice without modifying
  * the system's bundle.js.
@@ -14,11 +14,11 @@
  *      labels ("1","2","3","4","5","6") onto the ds die.
  *
  * To use as a standalone module, create a module.json with:
- *   "esmodules": ["scripts/sr5-dsn-fix.js"]
+ *   "esmodules": ["scripts/sr5-dsn-die.js"]
  *   "system": "shadowrun5e"  (optional, limits activation to SR5 worlds)
  */
 
-const MODULE_ID = "sr5-dsn-fix";
+const MODULE_ID = "sr5-dsn-die";
 const SR5_SYSTEM_ID = "shadowrun5e";
 const DS_TYPE = "ds"; // SR5Die.DENOMINATION = "s", so the die type is "ds"
 
