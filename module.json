@@ -1,0 +1,32 @@
+{
+  "id": "sr5-dsn-die",
+  "title": "Option for customizing Dice-So-Nice die for Shadowrun 5.0",
+  "description": "A simple module to disable the forced SR5 custom die (ds) in Dice-So-Nice so that the dot versions can be used. It is also possible to customize the dot versions by replacing the dot.webp image in \modules\dice-so-nice\textures folder with one's own design. A sample image is available. This module does not do anything if Dice-So-Nice module is not installed and in use.",
+  "authors": [{"name": "Kurko"}],
+  "version": "0.1",
+  "compatibility": {
+	"minimum": "13",
+	"verified": "13"
+  },
+  "url": "https://github.com/BlauKreuz/sr5-dsn-die",
+  "manifest": "https://github.com/BlauKreuz/sr5-dsn-die/releases/download/v0.1/module.json",
+  "download": "https://github.com/BlauKreuz/sr5-dsn-die/releases/download/v0.1/sr5-dsn-die-v0.1.zip",
+  "esmodules": ["scripts/sr5-dsn-die.js"],
+
+  "relationships": {
+	"requires": [
+	{
+	"id": "lib-wrapper",
+	"type": "module",
+	"manifest": "https://github.com/ruipin/fvtt-lib-wrapper/releases/latest/download/module.json"
+	},
+	{
+	"id": "SR5-FoundryVTT",
+	"type": "system",
+	"manifest": "https://raw.githubusercontent.com/SR5-FoundryVTT/SR5-FoundryVTT/master/system.json"
+	}
+	]
+  }
+
+
+}
