@@ -9,7 +9,7 @@
 	"verified": "13"
   },
   "url": "https://github.com/BlauKreuz/sr5-dsn-die",
-"manifest": "https://raw.githubusercontent.com/BlauKreuz/sr5-dsn-die/main/module.json",
+  "manifest": "https://github.com/BlauKreuz/sr5-dsn-die/releases/download/v0.1/module.json",
   "download": "https://github.com/BlauKreuz/sr5-dsn-die/releases/download/v0.1/sr5-dsn-die-v0.1.zip",
   "esmodules": ["scripts/sr5-dsn-die.js"],
 
