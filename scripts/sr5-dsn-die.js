@@ -1,8 +1,7 @@
 /**
  * sr5-dsn-die.js
  *
- * Fixes the Shadowrun 5e system integration with Dice So Nice without modifying
- * the system's bundle.js.
+ * Fixes the Shadowrun 5e system integration with Dice So Nice.
  *
  * Problems solved:
  *   1. All DSN appearance systems (Dot Black, Spectrum, etc.) are greyed out for
@@ -12,10 +11,6 @@
  *
  *   2. No way to use plain d6 dot/image faces — the system always forces text
  *      labels ("1","2","3","4","5","6") onto the ds die.
- *
- * To use as a standalone module, create a module.json with:
- *   "esmodules": ["scripts/sr5-dsn-die.js"]
- *   "system": "shadowrun5e"  (optional, limits activation to SR5 worlds)
  */
 
 const MODULE_ID = "sr5-dsn-die";
@@ -30,7 +25,7 @@ Hooks.once("init", () => {
 
   game.settings.register(MODULE_ID, "disableCustomLabels", {
     name: "SR5: Disable custom die face labels",
-    hint: "Prevents Shadowrun 5e from applying custom text labels (1,2,3,4,5,6) to the SR5 die (ds) in Dice So Nice. The die will use the standard d6 face images of whichever appearance system you select.",
+    hint: "Prevents Shadowrun 5e from applying custom SR5 die (ds) in Dice So Nice. The die will use the standard d6 face images of whichever appearance system you select.",
     scope: "world",
     config: true,
     type: Boolean,
